@@ -1,0 +1,29 @@
+In binary:
+000 : 0
+001 : 1
+010 : 2
+011 : 3
+100 : 4
+101 : 5 
+110 : 6
+111 : 7
+
+
+In decimals:
+123 = 10^0 * 3 + 10^1*2 + 10^2 * 1;
+
+For binary:
+2^2 2^1 2^0  = 4 2 1
+#   #   #
+
+American Standard Code for Information Interchange (ASCII)
+
+Hi!
+72 73 33
+Bits: there would be 8 bits each
+1 byte = 8 bits
+The largest number which we can represent using binary is 255: 2^8 - 1 = 255 (2^n - 1);
+
+ASCII: Using 8 bits or 1 byte for each and every character, we can storw .
+
+Unicode is a mapping from the 
