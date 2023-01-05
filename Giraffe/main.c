@@ -2,35 +2,15 @@
 #include <math.h>
 
 int main() {
+    double firstNum;
+    double secondNum;
 
-    // Getting user input
-    int age;
-    double gpa;
-    char grade, name[20];
-    char fullName[20];
-    printf("Enter your age: ");
-    scanf("%d", &age);
-    printf("You are %d years old.\n", age);
+    printf("Enter the first number:");
+    scanf("%lf", &firstNum);
 
-    printf("Enter your gpa: ");
-    scanf("%lf", &gpa);
-    printf("Your gpa is %f.\n", gpa);
+    printf("Enter the second number:");
+    scanf("%lf", &secondNum);
 
-    while ((getchar()) != '\n');
-
-    printf("Enter your grade: ");
-    scanf("%c", &grade);
-    printf("Your grade is %c\n", grade);
-
-    printf("Enter your first name: ");
-    scanf("%s", name);
-    printf("Your name is %s\n", name);
-
-    while((getchar())!='\n');
-
-    // To get a line of text having spaces in between
-    printf("Enter you full name: ");
-    fgets(fullName, 20, stdin);
-    printf("Your full name is: %s", fullName);
+    printf("The sum of the two numbers is: %f", firstNum + secondNum);
     return 0;
 }
