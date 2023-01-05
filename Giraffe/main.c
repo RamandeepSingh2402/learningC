@@ -3,11 +3,34 @@
 
 int main() {
 
-    const int FAV_NUM = 1;
-    int num = 5;
-    printf("The value of num is: %d\n", num);
-    num = 10;
-    printf("The updated value of num is: %d\n", num);
-    printf("The constant value here is: %d\n", FAV_NUM);
+    // Getting user input
+    int age;
+    double gpa;
+    char grade, name[20];
+    char fullName[20];
+    printf("Enter your age: ");
+    scanf("%d", &age);
+    printf("You are %d years old.\n", age);
+
+    printf("Enter your gpa: ");
+    scanf("%lf", &gpa);
+    printf("Your gpa is %f.\n", gpa);
+
+    while ((getchar()) != '\n');
+
+    printf("Enter your grade: ");
+    scanf("%c", &grade);
+    printf("Your grade is %c\n", grade);
+
+    printf("Enter your first name: ");
+    scanf("%s", name);
+    printf("Your name is %s\n", name);
+
+    while((getchar())!='\n');
+
+    // To get a line of text having spaces in between
+    printf("Enter you full name: ");
+    fgets(fullName, 20, stdin);
+    printf("Your full name is: %s", fullName);
     return 0;
 }
