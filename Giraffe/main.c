@@ -1,15 +1,17 @@
 #include <stdio.h>
 #include <math.h>
 
+// Functions/Methods in C
+
+void sayHi(char name[], int age);
+
 int main() {
-    // Arrays in C
-    // Arrays: DS where we can store a bunch of data values
-    // The string of characters is basically an array of characters
-    char phrase[] = "Hello there";
-    char anotherPhrase[10];
-    int luckyNumbers[10];
-    luckyNumbers[0] = 1;
-    luckyNumbers[1] = 80;
-    printf("%d", luckyNumbers[1]);
+    sayHi("Mike", 20);
+    sayHi("Tom", 22);
+    sayHi("Oscar", 33);
     return 0;
+}
+
+void sayHi(char name[], int age) {
+    printf("Hi %s, you are %d years old.\n", name, age);
 }
