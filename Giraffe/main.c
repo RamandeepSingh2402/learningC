@@ -1,17 +1,21 @@
 #include <stdio.h>
 #include <math.h>
 
-// Functions/Methods in C
+// Return statements in C
 
-void sayHi(char name[], int age);
+double cube(double num);
+
 
 int main() {
-    sayHi("Mike", 20);
-    sayHi("Tom", 22);
-    sayHi("Oscar", 33);
+    double input;
+    double result;
+    printf("Enter the number which you want to be cubed: ");
+    scanf("%lf", &input);
+    result = cube(input);
+    printf("The cubed value is: %f", result);
     return 0;
 }
 
-void sayHi(char name[], int age) {
-    printf("Hi %s, you are %d years old.\n", name, age);
+double cube(double num) {
+    return num * num * num;;
 }
