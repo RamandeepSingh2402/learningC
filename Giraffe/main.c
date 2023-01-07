@@ -2,34 +2,33 @@
 
 
 int main() {
-    double num1;
-    double num2;
-    char op;
-    printf("Enter the first number: ");
-    scanf("%lf", &num1);
-    printf("Enter the operator: ");
-    scanf(" %c", &op);
-    printf("Enter the second number: ");
-    scanf("%lf", &num2);
+    char grade = 'A';
 
+    // Switch statements in C
+    switch (grade) {
+        case 'A':
+            printf("Your grade is A.");
+            break;
+        case 'B':
+            printf("You grade is B.");
+            break;
+        case 'C':
+            printf("Your grade is C.");
+            break;
+        case 'D':
+            printf("Your grade is D.");
+            break;
+        case 'E':
+            printf("Your grade is E.");
+            break;
+        case 'F':
+            printf("Your grade is F.");
+            break;
 
-    if(op == '+') {
-        printf("%f", num1 + num2);
+        default:
+            printf("Invalid grade.");
+            break;
     }
-    else if(op == '-') {
-        printf("%f", num1 - num2);
-    }
-    else if(op == '/') {
-        printf("%f", num1 / num2);
-    }
-    else if(op == '*') {
-        printf("%f", num1 * num2);
-    }
-    else{
-        printf("Invalid operator.");
-    }
-
-
 
     return 0;
 }
