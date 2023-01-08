@@ -1,23 +1,29 @@
 #include <stdio.h>
 
 int main() {
-    int index1 = 1;
-    int index2 = 1;
-    printf("The results of while loop are: \n");
-    // while loop
-    while(index1 <=5 ) {
-        printf("The index value is: %d\n", index1);
-        index1++;
+
+    int secretNum = 5;
+    int guessCount = 0;
+    int guessLimit = 3;
+    int outOfGuesses = 0;
+    int guess = 0;
+
+    while((guess != secretNum) && (outOfGuesses == 0)) {
+        if(guessCount < guessLimit) {
+            printf("Enter an integer: ");
+            scanf("%d", &guess);
+            guessCount++;
+        }
+        else {
+            outOfGuesses = 1;
+        }
     }
-
-    printf("The results of do while loop are: \n");
-    // do while loop
-    do {
-        printf("The index value is: %d\n", index2);
-        index2++;
-    } while (index2 <=5 );
-
-
+    if(outOfGuesses == 1) {
+        printf("You ran out of guesses.");
+    }
+    else {
+        printf("You guessed the right number!");
+    }
 
     return 0;
 }
