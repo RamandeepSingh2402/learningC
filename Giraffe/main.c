@@ -2,27 +2,12 @@
 
 int main() {
 
-    int secretNum = 5;
-    int guessCount = 0;
-    int guessLimit = 3;
-    int outOfGuesses = 0;
-    int guess = 0;
+    int luckyNumbers[] = { 2,4,6,8,10 };
 
-    while((guess != secretNum) && (outOfGuesses == 0)) {
-        if(guessCount < guessLimit) {
-            printf("Enter an integer: ");
-            scanf("%d", &guess);
-            guessCount++;
-        }
-        else {
-            outOfGuesses = 1;
-        }
-    }
-    if(outOfGuesses == 1) {
-        printf("You ran out of guesses.");
-    }
-    else {
-        printf("You guessed the right number!");
+    // For loops in C
+    printf("The values in the provided array are as follows: \n");
+    for(int i = 0; i<5; i++){
+        printf("%d\n", luckyNumbers[i]);
     }
 
     return 0;
