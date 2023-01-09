@@ -2,15 +2,11 @@
 
 int main() {
 
-   // Pointers in C
+   // Dereferencing pointers in C
    int age = 30;
-   int * pAge =&age;
-   double gpa = 3.61;
-   double * pGpa = &gpa;
-   char grade = 'A';
-   char * pGrade = &grade;
-
-   printf("Age's memory address: %p\n", pAge);
+   int *pAge = &age;
+    printf("The memory address of age is: %p\n", &age);
+    printf("The value stored in age is: %d", *pAge);
 
     return 0;
 }
