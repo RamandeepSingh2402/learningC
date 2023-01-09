@@ -2,32 +2,17 @@
 
 int main() {
 
-    // 2-D Arrays in C
-    int nums[3][2] = {
-
-                {1, 2},
-                {3, 4},
-                {5, 6}
-    };
-
-
-    printf("The original value at (0,0) is: %d\n", nums[0][0]);
-    printf("The original value at (0,1) is: %d\n", nums[0][1]);
-    printf("The original value at (1,0) is: %d\n", nums[1][0]);
-    printf("The original value at (1,1) is: %d\n", nums[1][1]);
-    printf("The original value at (2,0) is: %d\n", nums[2][0]);
-    printf("The original value at (2,1) is: %d\n", nums[2][1]);
-
-    printf("Result using nested loops: \n");
-    // Nested for loops
-    int i, j;
-    for(i = 0; i<3; i++) {
-        for(j = 0; j<2; j++) {
-            printf("(%d,%d): %d     ", i,j, nums[i][j]);
-        }
-        printf("\n");
-    }
-
+   // accessing memory addresses
+   // All these values will be stored in RAM
+   int age = 30;
+   double gpa = 3.4;
+   char grade = 'A';
+   // printing the memory address of the variables
+   // we use %p for pointers
+   // it is technically not a number, the memory address could be a hexadecimal number
+    printf("The memory address of age is: %p\n", &age);
+    printf("The memory address of gpa is: %p\n", &gpa);
+    printf("The memory address of grade is: %p\n", &grade);
 
     return 0;
 }
