@@ -2,17 +2,15 @@
 
 int main() {
 
-   // accessing memory addresses
-   // All these values will be stored in RAM
+   // Pointers in C
    int age = 30;
-   double gpa = 3.4;
+   int * pAge =&age;
+   double gpa = 3.61;
+   double * pGpa = &gpa;
    char grade = 'A';
-   // printing the memory address of the variables
-   // we use %p for pointers
-   // it is technically not a number, the memory address could be a hexadecimal number
-    printf("The memory address of age is: %p\n", &age);
-    printf("The memory address of gpa is: %p\n", &gpa);
-    printf("The memory address of grade is: %p\n", &grade);
+   char * pGrade = &grade;
+
+   printf("Age's memory address: %p\n", pAge);
 
     return 0;
 }
